@@ -49,7 +49,28 @@ ketukan komedi yang rapi; tidak ada kopi, meeting, reboot, atau unplug.
   ("created too many repositories, too quickly") selama ~35 menit;
   berhasil pada percobaan ulang ~15:44 WIB tanpa perubahan apa pun.
 
+## Revisi v3 (26 Nov 2026 ~15:55 WIB)
+
+- **Cacat v2 yang diperbaiki:** klausa tengah "attempted 0% alone" —
+  (1) subjek ambigu ("attempted" bisa dibaca sebagai agent yang mencoba,
+  padahal yang dinilai operator); (2) "attempted" kata kerja yang lemah —
+  mencoba 0% masih terdengar seperti usaha, padahal leluconnya operator
+  tidak menyelesaikan apa pun sendiri; (3) "at delegation" tidak idiomatis
+  untuk bahasa review HR.
+- **Perbaikan v3:** "attempted 0% alone" → "completed 0% solo" (subjek
+  jelas operator, "completed" metrik HR yang jujur dan lebih tajam,
+  "solo" lebih pendek dan berirama); "at" → "in delegation". Punch
+  "Chief Prompt Officer" dan angka 100% vs 0% dipertahankan.
+- **Baris final v3 (119 karakter):**
+
+  > Exceeds expectations in delegation: assigned 100% of tasks to me, completed 0% solo — promoted to Chief Prompt Officer.
+
+- **Commit:** `8802f7009ee868717c2cb7270c92bfcad453cace` (main.ts, sudah push).
+- **Uji lokal v3:** `node main.ts` tanpa error; `/output/entry.txt` persis
+  satu baris v3 + newline: 119 karakter, 122 byte, 1 baris — lolos gate
+  1–140 karakter.
+
 ## Status
 
-Entry sudah DIBANGUN dan BELUM DISUBMIT. Parent yang submit (bundle +
+Entry sudah DIBANGUN (v3) dan BELUM DISUBMIT. Parent yang submit (bundle +
 submit via kit CLI dengan --keypair).
